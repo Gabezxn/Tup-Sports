@@ -1,31 +1,31 @@
 export function Footer() {
   return (
     <footer className="footer" id="contato">
-      <div className="shell footer-grid">
+      <div className="shell footer-grid footer-grid-dark">
         <div>
-          <span className="eyebrow">TupaSports</span>
-          <h3>Projeto de e-commerce esportivo</h3>
+          <span className="eyebrow eyebrow-dark">TupaSports</span>
+          <h3>Projeto escolar com identidade guiada por pesquisa</h3>
           <p>
-            Desenvolvido para fins escolares com HTML, CSS, JavaScript, Node.js e
-            Next.js.
+            O site combina visual premium em preto, destaque comercial e estrutura moderna
+            em Next.js para representar a marca e vender melhor.
           </p>
         </div>
 
         <div>
-          <h3>Stack sugerida</h3>
+          <h3>Foco do projeto</h3>
           <ul>
-            <li>Frontend: Next.js + CSS</li>
-            <li>Backend: rotas do Next.js</li>
-            <li>Banco online: Neon PostgreSQL</li>
+            <li>Vendas e divulgacao da marca ao mesmo tempo</li>
+            <li>Destaque para roupas esportivas</li>
+            <li>Navegacao simples por esporte e promocoes</li>
           </ul>
         </div>
 
         <div>
-          <h3>Deploy</h3>
+          <h3>Infraestrutura</h3>
           <ul>
-            <li>Editor: Windsurf</li>
-            <li>Hospedagem: Vercel</li>
-            <li>Banco conectado por variável `DATABASE_URL`</li>
+            <li>Frontend e backend com Next.js</li>
+            <li>Banco online no Neon</li>
+            <li>Publicacao pronta para Vercel</li>
           </ul>
         </div>
       </div>

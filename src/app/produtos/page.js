@@ -5,7 +5,7 @@ import { ProductsClientView } from "@/components/ProductsClientView";
 
 export const metadata = {
   title: "Produtos | TupaSports",
-  description: "Catalogo de artigos esportivos da TupaSports."
+  description: "Catalogo esportivo da TupaSports com filtros, promocoes e experiencia guiada por pesquisa."
 };
 
 export default function ProductsPage() {
@@ -13,12 +13,12 @@ export default function ProductsPage() {
     <>
       <Header />
       <main className="section">
-        <div className="shell products-hero">
-          <span className="eyebrow">Pagina de produtos</span>
-          <h1>Catalogo conectado com a API do projeto</h1>
+        <div className="shell products-hero products-hero-strong">
+          <span className="eyebrow eyebrow-dark">Pagina de produtos</span>
+          <h1>Uma vitrine feita para vender com clareza</h1>
           <p>
-            Esta pagina consome a rota <code>/api/produtos</code>. Assim, seu trabalho
-            mostra frontend e backend funcionando juntos dentro do Next.js.
+            Aqui entram as funcionalidades mais pedidas na pesquisa: filtros visiveis,
+            busca, destaque para promocoes, favoritos, carrinho e leitura rapida dos produtos.
           </p>
           <div className="hero-actions">
             <Link className="btn btn-primary" href="/">

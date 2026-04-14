@@ -14,24 +14,38 @@ export default async function HomePage() {
       <Header />
       <main>
         <Hero />
+        <section className="section section-tight">
+          <div className="shell promo-banner">
+            <div>
+              <span className="eyebrow">Direcao da pesquisa</span>
+              <h2>Marca forte, oferta visivel e navegacao por esporte</h2>
+            </div>
+            <div className="promo-points">
+              <span>Preto como base visual</span>
+              <span>Roupas esportivas em destaque</span>
+              <span>Cadastro opcional para compra</span>
+            </div>
+          </div>
+        </section>
+
         <ProductSection
-          eyebrow="Categorias em destaque"
-          title="Equipamentos para diferentes modalidades"
-          description="Uma selecao visual para mostrar como a TupaSports atende estudantes, atletas amadores e clientes da cidade."
+          eyebrow="Esportes principais"
+          title="Categorias organizadas do jeito que o publico prefere"
+          description="A pesquisa mostrou que organizar por esporte ajuda mais do que esconder produtos em navegacao complexa."
           items={categories}
           isCategoryList
         />
         <ProductSection
-          eyebrow="Produtos populares"
+          eyebrow="Promocoes e destaques"
           title={
             source === "database"
-              ? "Vitrine principal vinda do banco"
-              : "Vitrine principal da loja"
+              ? "Vitrine conectada ao banco com foco comercial"
+              : "Vitrine modelo baseada no Forms"
           }
           description={
             source === "database"
-              ? "Esses produtos estao sendo carregados do Neon/PostgreSQL."
-              : "Esses produtos sao exemplos para sua apresentacao. Depois podemos trocar os dados mockados por dados do banco."
+              ? "Os produtos abaixo estao vindo do Neon e seguem a linha de experiencia definida pela pesquisa."
+              : "A vitrine foi reorganizada para destacar roupas esportivas, promocoes e avaliacao de produto."
           }
           items={products}
         />

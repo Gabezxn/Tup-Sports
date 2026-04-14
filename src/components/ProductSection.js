@@ -24,7 +24,7 @@ export function ProductSection({
         {!isCategoryList && (
           <div className="section-cta">
             <Link href="/produtos" className="btn btn-secondary">
-              Ver todos os produtos
+              Abrir vitrine completa
             </Link>
           </div>
         )}
