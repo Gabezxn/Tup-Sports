@@ -4,11 +4,11 @@ export function Header() {
   return (
     <header className="topbar">
       <div className="shell topbar-inner">
-        <Link href="/" className="brand" aria-label="TupaSports">
+        <Link href="/" className="brand" aria-label="Tupã Sports">
           <span className="brand-mark">TS</span>
           <span className="brand-text">
-            TupaSports
-            <small>Loja de artigos esportivos</small>
+            Tupã Sports
+            <small>Loja de artigos esportivos online</small>
           </span>
         </Link>
 

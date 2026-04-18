@@ -6,7 +6,11 @@ export function ProductGrid({
   items,
   isCategory = false,
   onToggleFavorite,
-  onAddToCart
+  onAddToCart,
+  onAddToCompare,
+  favorites = [],
+  cart = [],
+  compare = []
 }) {
   return (
     <div className="grid">
@@ -17,6 +21,10 @@ export function ProductGrid({
           isCategory={isCategory}
           onToggleFavorite={onToggleFavorite}
           onAddToCart={onAddToCart}
+          onAddToCompare={onAddToCompare}
+          isFavorite={favorites.includes(item.id)}
+          inCart={cart.includes(item.id)}
+          isCompared={compare.includes(item.id)}
         />
       ))}
     </div>
